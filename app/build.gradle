@@ -22,6 +22,37 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // dagger
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.8'
+    implementation 'com.google.dagger:dagger:2.8'
+
+    // butterknife
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+
+    // recyclerview
+    implementation 'com.android.support:recyclerview-v7:21.0.3'
+
+    // rxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.2'
+
+    // rxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    implementation 'javax.annotation:jsr250-api:1.0'
+
+    // mockito
+    androidTestImplementation 'org.mockito:mockito-core:1.9.5'
+
+    // dexmaker
+    androidTestImplementation 'com.google.dexmaker:dexmaker:1.0'
+
+    // dexmakerMockito
+    androidTestImplementation 'com.google.dexmaker:dexmaker-mockito:1.0'
+
+    // espresso
+    // testingSupportLib
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
