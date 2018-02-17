@@ -20,10 +20,15 @@ public class Navigator {
 
     }
 
-    public void navigateToUserLogin(Context context, BaseActivity activity) {
+    public void navigateTo(Context context, BaseActivity activity) {
         if (context != null) {
-//            Intent intent = BaseActivity.getCall
+            Intent intent = this.getCallingIntent(context, activity);
+            context.startActivity(intent);
         }
+    }
+
+    public static Intent getCallingIntent(Context context, BaseActivity activity) {
+        return new Intent(context, activity.getClass());
     }
 
 }

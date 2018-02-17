@@ -2,7 +2,7 @@ package com.delose.paymentapp.presenter.di.module;
 
 import android.app.Activity;
 
-import com.delose.paymentapp.presenter.di.scope.PerActivity;
+import com.delose.paymentapp.presenter.di.scope.ActivityScope;
 
 import dagger.Module;
 import dagger.Provides;
@@ -20,7 +20,7 @@ public class ActivityModule {
         this.activity = activity;
     }
 
-    @Provides @PerActivity Activity getActivity() {
+    @Provides @ActivityScope Activity getActivity() {
         return this.activity;
     }
 
